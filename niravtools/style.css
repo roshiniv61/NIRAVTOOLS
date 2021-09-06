@@ -1,0 +1,155 @@
+*{box-sizing: border-box;
+}
+div{
+    display: block;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+.container{
+    width: 90%;
+    margin: 50px auto;  
+}
+.heading{
+    color: #0084bf;
+}
+.para{
+  
+    display: flex ;
+    flex-wrap: wrap;
+}    
+.para > *
+{
+  flex: 1 1 600px;
+ }
+
+ .cards{
+     display: flex;
+     
+ }
+
+ @media (min-width: 768px){
+.col-sm-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ }
+ 
+.col-sm-6{position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;}
+   
+    @media (min-width: 768px){
+    .weo-teaser-blog-style {
+        margin-bottom: 30px;
+    }
+
+    .weo-teaser-blog-style {
+        padding: 15px;
+        background-color: #eee;
+    } 
+}
+@media (min-width: 992px){
+    .row{
+        display:flex ;
+        flex-wrap: nowrap;
+        
+    }}
+    @media (min-width: 992px){
+.row > *{flex: 1 1 600px;
+
+}}
+    .row
+    {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+@media (min-width: 992px){
+.col-md-5 {
+    width: 41.66666667%;
+    float:left;
+}
+}
+
+@media (min-width: 992px){
+.weo-teaser-blog-style .weo-teaser-image {
+    margin-bottom: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+}
+
+
+    .weo-teaser-blog-style .weo-teaser-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    img {
+        vertical-align: middle;
+    }
+    a {
+        color: #0084bf;
+        text-decoration: none;
+        background-color: transparent;
+    }  
+
+    .weo-teaser-blog-style h4 {
+        margin-top: 0;
+    }
+    h4 {
+        font-size: 1.1rem;
+        font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+    .p {
+        margin: 0 0 10px;
+        display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+
+    .text-right {
+        text-align: right;
+       
+    }
+    .col-md-7 a{
+        padding: 5px;
+        margin-right: 2px;
+        border-radius: 3px;
+        background-color: #0084bf;
+        color: ivory;
+    }
+
+    @media (min-width: 992px){
+        .col-md-7 {
+            margin-left: 20px;
+        }}
+      
+
+   
