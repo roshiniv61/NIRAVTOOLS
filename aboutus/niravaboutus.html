@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirav</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"> </script>
+  
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="w-full z-20">  
+    <nav class="bg-white shadow-lg">
+        <div class=" mx-auto px-4">
+            <div class=" flex justify-between">
+                <div class=" w-full flex  justify-between">
+                    <div>
+                        <!-- Website Logo -->
+                        <a href="/" class="flex items-center">
+                            <img src="\aboutus\aboutusimages\Nirav-Logo-TP.png" alt="Logo" class="h-12 w-12 mr-2">
+                            <span class="font-semibold text-blue-900 text-md uppercase whitespace-nowrap">Nirav Tools</span>
+                        </a>
+                    </div>
+                    <!-- Primary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-8 md:space-x-2">
+                        <a href="/" class="py-1 px-2 uppercase text-xs whitespace-nowrap  text-white  bg-blue-900 font-medium ">Home</a>
+                        <a href="/benz" class="py-1 px-2  text-xs whitespace-nowrap  uppercase text-gray-500 hover:text-white font-medium hover:bg-blue-900 transition duration-300">Benz Tooling</a>
+                        <a href="/diebold" class="py-1 px-2  text-xs whitespace-nowrap  uppercase text-gray-500 hover:text-white font-medium hover:bg-blue-900 transition duration-300">Diebold</a>
+                        <a href="/about-us" class="py-1 px-2  text-xs whitespace-nowrap  uppercase text-gray-500 hover:text-white font-medium hover:bg-blue-900 transition duration-300">About Us</a>
+                        <a href="/career" class="py-1 px-2 text-xs whitespace-nowrap  uppercase text-gray-500 hover:text-white font-medium hover:bg-blue-900 transition duration-300">Career</a>
+                        <a href="/service" class="py-1 px-2  text-xs whitespace-nowrap  uppercase text-gray-500 hover:text-white font-medium hover:bg-blue-900 transition duration-300">Service</a>
+                        <a href="/contactus" class="py-1 px-2  text-xs whitespace-nowrap  uppercase text-gray-500 hover:text-white font-medium hover:bg-blue-900 transition duration-300">Contact Us</a>
+                    </div>
+                </div>
+                <!-- Secondary Navbar items 
+                <div class="hidden md:flex items-center space-x-3 ">
+                    <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
+                    <a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
+                </div> -->
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                    <svg class=" w-6 h-6 text-blue-900 hover:text-yellow-800 "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" 
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu bg-blue-900">
+            <ul class="border border-blue-900">
+                <li class="active"><a href="/" class="uppercase block text-sm px-2 py-4 text-white hover:bg-white hover:text-blue-900 font-semibold">Home</a></li>
+                <li><a href="/benz" class="uppercase block text-white text-sm px-2 py-4 hover:bg-white hover:text-blue-900 transition duration-300">Benz Tooling</a></li>
+                <li><a href="/diebold" class="uppercase block text-white text-sm px-2 py-4 hover:bg-white hover:text-blue-900 transition duration-300">Diebold</a></li>
+                <li><a href="/about-us" class="uppercase block text-white text-sm px-2 py-4 hover:bg-white hover:text-blue-900  transition duration-300">About Us</a></li>
+                <li><a href="/career" class="uppercase block text-white text-sm px-2 py-4  hover:bg-white hover:text-blue-900 transition duration-300">Career</a></li>
+                <li><a href="/Service" class="uppercase block text-white text-sm px-2 py-4  hover:bg-white hover:text-blue-900 transition duration-300">Service</a></li>
+                <li><a href="/contactus" class="uppercase block text-white text-sm px-2 py-4  hover:bg-white hover:text-blue-900hover:bg-white hover:text-blue-900  transition duration-300">Contact Us</a></li>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+    
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+    </nav>
+</div>
+
+
+
+
+
+
+
+    <section class="h-40 bg-gray-100 border border-gray-100 "
+     style="background-image: url( aboutusimages/hero-temp.jpeg );" >
+        <div class="container mx-auto">
+            <div class=" p-2 my-10 text-center flex flex-col items-center justify-center">
+                <h5 class="text-sm">Get to know </h5>
+                <h2
+                    class="text-xl sm:text-2xl md:text-4xl whitespace-nowrap bg-blue-900 font-semibold text-white w-min tracking-wider px-8 py-1">
+                    About us </h2>
+            </div>
+        </div>
+    </section>
+    
+    <section class="flex mx-auto py-20 px-10 bg-gray-100" >
+        <div class="flex container mx-auto" >
+         some details about us
+        </div>
+    </section>
+    
+    <section class="flex bg-cover bg-opacity-25  min-h-screen "
+    style="background-image: url( aboutusimages/hero-temp.jpeg );" >
+        <div class="container mx-auto p-10 text-white">
+            <div class=" bottom-3/4 flex justify-center">
+                <h2 class="text-4xl font-bold">SHAPING TOMORROW TOGETHER.</h2>
+                <h2 class="text-4xl font-bold">OUR VALUES.</h2>
+            </div>
+        
+            <div class="flex gap-x-8 mt-10">
+                <div class=" w-1/2 ">
+                    <div>
+                        <h1 class="font-bold text-lg pt-4">TRUST</h1>
+                        <p>We believe that fair treatment and respectful cooperation should be an absolute given
+                            – not only within our company. Our business partners can always take us at our word.</p>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg pt-10">INNOVATION</h1>
+                        <p>Our goal is to shape the future of the industry. That is why we constantly challenge the
+                            status quo and break new ground to move the entire industry forward.</p>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg pt-4">QUALITY</h1>
+                        <p>Each of our milling cutters leaves our factory in pristine quality – we give our all to
+                            ensure this. We make sure that our customers can always rely on our milling cutters.</p>
+                    </div>
+                </div>
+        
+                <div class=" w-1/2">
+                    <div>
+                        <h1 class="font-bold text-lg pt-4">REGIONAL FOCUS</h1>
+                        <p>We are deeply rooted in our Bavarian homeland. We are aware of our social responsibility both
+                            as a company and employer, and therefore support regional associations and institutions.</p>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg pt-4">AN EXTENDED FAMILY</h1>
+                        <p>Friendly and respectful interaction with each other are the hallmarks of our team. We always
+                            work towards our common goal of growing further every day</p>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-lg pt-4">TRADITION</h1>
+                        <p>We are very proud of our long history. Our many years of experience mean that we are familiar
+                            with and able to meet the high quality standards of a wide range of industries.</p>
+                    </div>
+                </div>
+            </div>
+        
+        
+        </div>
+    </section>
+    
+    <section class="flex">
+        <div class="container mx-auto w-full flex flex-col p-10 gap-y-4 items-center justify-center">
+            <h2 class="  mt-0 text-blue-800 font-bold text-lg lg:text-2xl md:text-xl sm:text-xl  mb-2"> PRODUCTS WE DEAL
+                WITH</h2>
+            <div class="w-full  flex flex-wrap justify-between">
+                <div class="flex flex-col card w-full sm:w-1/4">
+                    <div class="card-body gap-y-4 flex justify-between">
+                        <img src="aboutusimages/benz-logo.png" />
+                        <button
+                            class="btn-outline btn-sm border border-blue-900 hover:bg-blue-900 hover:text-white rounded-none">Explore</button>
+                    </div>
+                </div>
+                <div class="flex flex-col card w-full sm:w-1/4">
+                    <div class="card-body gap-y-4 flex justify-between">
+                        <img src="aboutusimages/diebold-logo.png" />
+                        <button
+                            class="btn-outline btn-sm border border-blue-900 hover:bg-blue-900 hover:text-white rounded-none">Explore</button>
+                    </div>
+                </div>
+                <div class="flex flex-col card w-full sm:w-1/4">
+                    <div class="card-body gap-y-4 flex mt-4 justify-between" >
+                        <img src="aboutusimages/apfel-logo.png" />
+                        <button
+                            class="btn-outline btn-sm border border-blue-900 hover:bg-blue-900 hover:text-white rounded-none">Explore</button>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+    </section>
+    
+    <section class="flex">
+        <div class="container mx-auto w-full flex flex-col p-10 gap-y-4 items-center justify-center">
+            <h2 class="  mt-0 text-blue-800 font-bold text-lg lg:text-2xl md:text-xl sm:text-xl  mb-2"> OUR TEAM
+                </h2>
+            <div class="w-full  flex flex-wrap justify-evenly">
+                <div class="flex flex-col card w-full sm:w-1/4">
+                    <div class="card-body gap-y-4 flex justify-evenly">
+                        <p>SRIDHAR.R.K</p>
+                        <p>DIRECTOR</p>
+                        <p>Email:<a href="sridhar@niravtools.com">sridhar@niravtools.com </a></p>
+                        <p>Ph :<a href="+91-9480772921"> +91-9480772921 </a></p>
+                          
+                        <img src="aboutusimages/20210930_181940-1.jpg" >
+                    </div> 
+                </div>
+    
+                <div class="flex flex-col card w-full sm:w-1/4">
+                    <div class="card-body gap-y-4 flex justify-evenly">
+                        <p>PRASANNA KUMAR K A </p>
+                        <p>CEO</p>
+                        <p>Email:<a href="prasanna@niravtools.com">prasanna@niravtools.com</a></p>
+                        <p>Ph : <a href="+91-9535026165">+91-9535026165</a></p>
+                         
+                        <img src="aboutusimages/20210930_182034-2.jpg" />
+                       
+                    </div>
+                </div>
+    </div>
+    <div class="w-full  flex flex-wrap justify-evenly">
+                <div class="flex flex-col card w-full sm:w-1/4">
+                    <div class="card-body gap-y-4 flex justify-evenly">
+                        <p>PREM KUMAR J T </p>
+                        <p>APPLICATION ENGINEER.</p>
+                        <p>Email:<a href=" service@niravtools.com">service@niravtools.com</a></p>
+                        <p>Ph : <a href="+91-9035961656">+91-9035961656</a></p>
+    
+                        <img src="aboutusimages/20210930_182039-3.jpg" />
+                    </div>
+                </div>
+    
+                <div class="flex flex-col card w-full sm:w-1/4">
+                    <div class="card-body gap-y-4 flex justify-evenly">
+                        <p>MAHENDRA G </p>
+                        <p>SALES  </p>
+                        <p>Email:<a href="info@niravtools.com">info@niravtools.com </a></p>
+                        <p>Ph : <a href=" +91-9844665686"> +91-9844665686</a></p>
+    
+                        <img src="aboutusimages/20210930_182044-4.jpg" />
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        </section>
+
+
+
+
+
+        <footer class="p-10  w-full bg-base-200 text-base-content  border-t-2 border-gray-200 ">
+            <div class="container mx-auto footer">
+        
+            <div>
+             <img src="/images/Nirav-Logo-TP.png">
+              <p>Nirav Tools Pvt Ltd.
+                <br>Leading Distributor for Benz, Diebold and apfel
+              </p>
+            </div> 
+            <div>
+              <span class="footer-title">PRODUCTS</span> 
+              <a class="link link-hover">Benz Tooling</a> 
+              <a class="link link-hover">Diebold</a> 
+              <a class="link link-hover">Apfel </a> 
+            </div> 
+            <div>
+              <span class="footer-title">Company</span> 
+              <a class="link link-hover">About us</a> 
+              <a class="link link-hover">Contact</a> 
+              <a class="link link-hover">Career</a> 
+            </div> 
+            <div>
+              <span class="footer-title">Legal</span> 
+              <a class="link link-hover">Terms of use</a> 
+              <a class="link link-hover">Privacy policy</a> 
+            </div>
+        </div>
+        
+          </footer>
+        <script>
+            gsap.utils.toArray(".slide-up").forEach(section => {
+              gsap.from(section.querySelectorAll("h1, p, div"), {
+                scrollTrigger: section,
+                toggleActions: "restart reset restart reset",
+                autoAlpha: 0,
+                y: 25,
+                duration: 0.5,
+                stagger: 0.25
+              });
+            });
+          </script>
+          <script>
+            var 
+            function navToggle() {
+                var nav = document.getElementById('mobileMenu');
+                nav.classList.toggle('hidden');
+            }
+          </script>
+</body>
+</html>
